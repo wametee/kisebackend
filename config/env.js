@@ -6,9 +6,8 @@ import { config } from 'dotenv';
 // If NODE_ENV is not set, it defaults to 'development'
 config({ path: `.env.${process.env.NODE_ENV || 'development'}.local` });
 
-// Export the PORT and NODE_ENV environment variables
-// The destructuring assignment is used to extract these variables from process.env
-export const { PORT, NODE_ENV } = process.env;
+// Export the PORT, NODE_ENV, and DB_URI environment variables
+export const { PORT, NODE_ENV, DB_URI } = process.env;
 
 
 /* 
