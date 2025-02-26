@@ -14,14 +14,6 @@
          type: String,
          required: [true, "Please provide a phone number"],
      },
-        course: {
-            type: String,
-            required: [true, "Please provide a course"],
-        },
-        dateOfBirth: {
-            type: Date,
-            required: [true, "Please provide a date of birth"],
-        },
  }, {
      timestamps: true,
  });

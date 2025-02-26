@@ -7,7 +7,10 @@ import { config } from 'dotenv';
 config({ path: `.env.${process.env.NODE_ENV || 'development'}.local` });
 
 // Export the PORT, NODE_ENV, and DB_URI environment variables
-export const { PORT, NODE_ENV, DB_URI } = process.env;
+export const { PORT, NODE_ENV, DB_URI,
+              JWT_SECRET, JWT_EXPIRES_IN,
+              EMAIL_USER, EMAIL_PASS
+             } = process.env;
 
 
 /* 
